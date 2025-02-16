@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-function App() {
-  const [count, setCount] = useState(0)
+import Header from './layout/Header.jsx';
+import {Route,Switch} from "react-router-dom"
+import Footer from './layout/Footer.jsx';
+import PageContent from './layout/PageContent.jsx';
+import ProductCard from './components/ProductCard.jsx';
+import dress1 from './images/dress2.jpg'
+import dress3 from './assets/dress1.jpg'
+import dress4 from './images/dress4.jpg'
+import dress5 from './images/dress5.jpg'
+import clt from './images/clt1.jpg'
+import clt2 from './images/clt2.jpg'
+import clt3 from './images/clt3.jpg'
+ function App() {
+  
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header/>
+
+      <Switch>
+        
+          <Route path="/">
+            <PageContent/>
+            <div className="p-4 mb-16 flex flex-wrap justify-center gap-6">
+            <ProductCard pic={clt2}title="clt2"/>
+            <ProductCard pic={dress3} title="dress1"/>
+            <ProductCard pic={dress4}title="dress4"/> 
+            <ProductCard pic={dress5}title="dress5"/>
+            <ProductCard pic={clt3}title="clt3"/>
+            </div>
+            
+           <Footer/>
+          </Route>
+       
+          
+          
+        </Switch>
+      
       <ToastContainer />
     </>
   )
