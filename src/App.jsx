@@ -4,13 +4,8 @@ import Header from "./layout/Header.jsx";
 import { Route, Switch } from "react-router-dom";
 import Footer from "./layout/Footer.jsx";
 import PageContent from "./layout/PageContent.jsx";
-import ProductCard from "./components/ProductCard.jsx";
-import dress3 from "./assets/dress1.jpg";
-import dress4 from "./images/dress4.jpg";
-import dress5 from "./images/dress5.jpg";
-import clt2 from "./images/clt2.jpg";
-import clt3 from "./images/clt3.jpg";
 import ProductSlider from "./components/ProductSlider.jsx";
+import ProductDetailPage from "./components/ProductDetailPage.jsx";
 import ShopPage from "./pages/ShopPage.jsx";
 function App() {
   return (
@@ -29,6 +24,9 @@ function App() {
         </Route>
         <Route path="/shop">
           <ShopPage />
+        </Route>
+        <Route path="/product/:id">
+          <ProductDetailPage />
         </Route>
       </Switch>
       <Footer />

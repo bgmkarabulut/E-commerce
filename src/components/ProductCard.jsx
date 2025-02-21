@@ -1,10 +1,14 @@
-const ProductCard = ({ pic, title, price }) => {
+import { Link } from "react-router-dom";
+const ProductCard = ({ id, images, title, price }) => {
   return (
     <div className="group my-10 flex w-full max-w-xs flex-col overflow-hidden bg-white">
-      <a className="relative flex h-92 w-65 overflow-hidden" href="#">
+      <Link
+        to={`/product/${id}`}
+        className="relative flex h-92 w-65 overflow-hidden"
+      >
         <img
           className="absolute top-0 right-0 h-full w-full object-cover"
-          src={pic}
+          src={images[0]}
           alt={title}
         />
         <div className="absolute bottom-0 mb-4 flex w-full justify-center space-x-4"></div>
@@ -12,21 +16,21 @@ const ProductCard = ({ pic, title, price }) => {
           <button className="flex h-10 w-10 items-center justify-center bg-gray-900 text-white transition hover:bg-gray-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
+              className="h-5 w-5"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               />
             </svg>
           </button>
           <button className="flex h-10 w-10 items-center justify-center bg-gray-900 text-white transition hover:bg-gray-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="mr-2 h-5 w-5"
+              className="mr-2 h-5 w-5"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -34,13 +38,13 @@ const ProductCard = ({ pic, title, price }) => {
             </svg>
           </button>
         </div>
-      </a>
+      </Link>
       <div className="mt-4 pb-5">
-        <a href="#">
+        <Link to={`/product/${id}`}>
           <h5 className="card-title text-lg font-semibold mt-2 text-center w-full tracking-tight text-gray-500">
             {title}
           </h5>
-        </a>
+        </Link>
         <div className="mb-5 flex justify-center">
           <p>
             <span className="text-sm font-bold text-gray-900">{price}</span>
