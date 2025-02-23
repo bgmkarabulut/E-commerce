@@ -46,14 +46,14 @@ export const products = [
   {
     id: 10,
     images: [pinkdre, pinkdre2, pinkdre3],
-    title: "Elbise 1",
+    title: "Yakası bağcıklı mini elbise",
     price: "₺",
     category: "Elbise",
   },
   {
     id: 11,
     images: [blackdre, blackdre2, blackdre3, blackdre4],
-    title: "Elbise 1",
+    title: "Asimetrik kesim midi elbise",
     price: "₺",
     category: "Elbise",
   },
@@ -67,7 +67,7 @@ export const products = [
   {
     id: 13,
     images: [dre, dree2, dree3, dree4],
-    title: "Elbise 1",
+    title: "Bangolin Bardot mini elbise",
     price: "₺",
     category: "Elbise",
   },

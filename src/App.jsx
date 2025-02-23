@@ -7,6 +7,7 @@ import PageContent from "./layout/PageContent.jsx";
 import ProductSlider from "./components/ProductSlider.jsx";
 import ProductDetailPage from "./components/ProductDetailPage.jsx";
 import ShopPage from "./pages/ShopPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
 function App() {
   return (
     <>
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route path="/product/:id">
           <ProductDetailPage />
+        </Route>
+        <Route path="/contact">
+          <ContactPage />
         </Route>
       </Switch>
       <Footer />

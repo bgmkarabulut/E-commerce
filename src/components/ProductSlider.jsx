@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import ProductCard from "./ProductCard";
-import { products } from "../data/products"; // Ürünleri bir data dosyasından çekelim
+import { products } from "../data/products"; // Ürünleri bir data dosyasından çektim
 import "./ProductSlide.css";
 
 const ProductSlider = () => {
