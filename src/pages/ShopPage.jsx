@@ -3,7 +3,16 @@ import ProductCard from "../components/ProductCard";
 import { products } from "../data/products";
 import { useState } from "react";
 const ShopPage = () => {
-  const list = ["Hepsini Keşfet", "Yeni", "Jean", "Elbise", "Ceket"];
+  const list = [
+    "Hepsini Keşfet",
+    "Yeni",
+    "Jean",
+    "Elbise",
+    "Tişört",
+    "Ceket",
+    "Ayakkabı",
+    "Aksesuar",
+  ];
   const [activeCategory, setActiveCategory] = useState("Hepsini Keşfet");
 
   const filteredProducts =

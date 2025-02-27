@@ -8,6 +8,8 @@ import ProductSlider from "./components/ProductSlider.jsx";
 import ProductDetailPage from "./components/ProductDetailPage.jsx";
 import ShopPage from "./pages/ShopPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
+import TeamPage from "./pages/TeamPage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
 function App() {
   return (
     <>
@@ -31,6 +33,12 @@ function App() {
         </Route>
         <Route path="/contact">
           <ContactPage />
+        </Route>
+        <Route path="/team">
+          <TeamPage />
+        </Route>
+        <Route path="/about">
+          <AboutPage />
         </Route>
       </Switch>
       <Footer />

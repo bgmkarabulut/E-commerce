@@ -6,7 +6,7 @@ import Banner from "../components/Banner";
 
 export default function HomePage() {
   const categories = [
-    { src: girl, label: "Women" },
+    { src: girl, label: "T-shirt" },
     { src: shoe, label: "Shoes" },
     { src: accesories, label: "Accessories" },
     { src: dress, label: "Dresses" },
