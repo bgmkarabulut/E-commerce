@@ -7,6 +7,7 @@ import ContactPage from "../pages/ContactPage";
 import ShopPage from "../pages/ShopPage";
 import TeamPage from "../pages/TeamPage";
 import ProductDetailPage from "../components/ProductDetailPage";
+import SignupForm from "@/pages/SignupForm";
 
 const PageContent = () => {
   return (
@@ -18,6 +19,7 @@ const PageContent = () => {
         <Route exact path="/contact" component={ContactPage} />
         <Route exact path="/team" component={TeamPage} />
         <Route exact path="/product/:id" component={ProductDetailPage} />
+        <Route exact path="/signup" component={SignupForm} />
       </Switch>
     </main>
   );

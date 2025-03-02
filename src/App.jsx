@@ -10,6 +10,7 @@ import ShopPage from "./pages/ShopPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import TeamPage from "./pages/TeamPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
+import SignupForm from "./pages/SignupForm.jsx";
 function App() {
   return (
     <>
@@ -39,6 +40,9 @@ function App() {
         </Route>
         <Route path="/about">
           <AboutPage />
+        </Route>
+        <Route path="/signup">
+          <SignupForm />
         </Route>
       </Switch>
       <Footer />
