@@ -8,7 +8,7 @@ import ShopPage from "../pages/ShopPage";
 import TeamPage from "../pages/TeamPage";
 import ProductDetailPage from "../components/ProductDetailPage";
 import SignupForm from "@/pages/SignupForm";
-
+import LoginForm from "@/pages/LoginForm";
 const PageContent = () => {
   return (
     <main className="flex flex-col items-center w-full min-h-screen px-3 md:px-5 lg:px-6">
@@ -20,6 +20,7 @@ const PageContent = () => {
         <Route exact path="/team" component={TeamPage} />
         <Route exact path="/product/:id" component={ProductDetailPage} />
         <Route exact path="/signup" component={SignupForm} />
+        <Route exact path="/login" component={LoginForm} />
       </Switch>
     </main>
   );

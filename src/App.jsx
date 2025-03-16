@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage.jsx";
 import TeamPage from "./pages/TeamPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import SignupForm from "./pages/SignupForm.jsx";
+import LoginForm from "./pages/LoginForm.jsx";
 function App() {
   return (
     <>
@@ -43,6 +44,9 @@ function App() {
         </Route>
         <Route path="/signup">
           <SignupForm />
+        </Route>
+        <Route path="/login">
+          <LoginForm />
         </Route>
       </Switch>
       <Footer />
